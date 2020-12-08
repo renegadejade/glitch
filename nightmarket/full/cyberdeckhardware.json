@@ -1,0 +1,27 @@
+[
+    {
+        "name" : "Backup Drive",
+        "cost" : "100"
+    },
+    {
+        "name" : "DNA Lock",
+        "cost" : "100"
+    },
+    {
+        "name" : "Hardened Circuitry",
+        "cost" : "100"
+    },
+    {
+        "name" : "Insulated Wiring",
+        "cost" : "100"
+    },
+    {
+        "name" : "KRASH Barrier",
+        "cost" : "100"
+    },
+    {
+        "name" : "Range Upgrade",
+        "cost" : "100"
+    }
+]
+        

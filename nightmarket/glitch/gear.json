@@ -1,0 +1,215 @@
+[
+    {
+        "name" : "Agent",
+        "cost" : "100"
+    },
+    {
+        "name" : "Airhypo",
+        "cost" : "50"
+    },
+    {
+        "name" : "Anti-Smog Breathing Mask",
+        "cost" : "100"
+    },
+    {
+        "name" : "Audio Recorder",
+        "cost" : "100"
+    },
+    {
+        "name" : "Auto Level Dampening Ear Protectors",
+        "cost" : "1000"
+    },
+    {
+        "name" : "Binoculars",
+        "cost" : "50"
+    },
+    {
+        "name" : "Braindance Viewer",
+        "cost" : "1000"
+    },
+    {
+        "name" : "Bug Detector",
+        "cost" : "500"
+    },
+    {
+        "name" : "Carryall",
+        "cost" : "20"
+    },
+    {
+        "name" : "Chemical Analyzer",
+        "cost" : "1000"
+    },
+    {
+        "name" : "Computer",
+        "cost" : "50"
+    },
+    {
+        "name" : "Cryopump",
+        "cost" : "5000"
+    },
+    {
+        "name" : "Cryotank",
+        "cost" : "5000"
+    },
+    {
+        "name" : "Cyberdeck (Excellent)",
+        "cost" : "1000"
+    },
+    {
+        "name" : "Cyberdeck (Poor)",
+        "cost" : "100"
+    },
+    {
+        "name" : "Cyberdeck (Standard)",
+        "cost" : "500"
+    },
+    {
+        "name" : "Disposable Cell Phone",
+        "cost" : "50"
+    },
+    {
+        "name" : "Drum Sythesizer",
+        "cost" : "500"
+    },
+    {
+        "name" : "Duct Tape",
+        "cost" : "20"
+    },
+    {
+        "name" : "Electric Guitar",
+        "cost" : "500"
+    },
+    {
+        "name" : "Flashlight",
+        "cost" : "20"
+    },
+    {
+        "name" : "Food Stick",
+        "cost" : "10"
+    },
+    {
+        "name" : "Glow Paint",
+        "cost" : "20"
+    },
+    {
+        "name" : "Glow Stick",
+        "cost" : "10"
+    },
+    {
+        "name" : "Grapple Gun",
+        "cost" : "100"
+    },
+    {
+        "name" : "Handcuffs",
+        "cost" : "50"
+    },
+    {
+        "name" : "Homing Tracer",
+        "cost" : "500"
+    },
+    {
+        "name" : "Inflatable Bed & Sleep-bag",
+        "cost" : "20"
+    },
+    {
+        "name" : "Kibble Pack",
+        "cost" : "10"
+    },
+    {
+        "name" : "Linear Frame ß (Beta)",
+        "cost" : "5000"
+    },
+    {
+        "name" : "Linear Frame ∑ (Sigma)",
+        "cost" : "1000"
+    },
+    {
+        "name" : "Lock Picking Set",
+        "cost" : "20"
+    },
+    {
+        "name" : "Medscanner",
+        "cost" : "1000"
+    },
+    {
+        "name" : "Medtech Bag",
+        "cost" : "100"
+    },
+    {
+        "name" : "Memory Chips",
+        "cost" : "10"
+    },
+    {
+        "name" : "MRE",
+        "cost" : "10"
+    },
+    {
+        "name" : "Personal CarePak",
+        "cost" : "20"
+    },
+    {
+        "name" : "Pocket Amplifier",
+        "cost" : "50"
+    },
+    {
+        "name" : "Radar Detector",
+        "cost" : "500"
+    },
+    {
+        "name" : "Radio Communicator",
+        "cost" : "100"
+    },
+    {
+        "name" : "Radio Scanner/ Music Player",
+        "cost" : "50"
+    },
+    {
+        "name" : "Road Flare",
+        "cost" : "10"
+    },
+    {
+        "name" : "Rope (60m/yds)",
+        "cost" : "20"
+    },
+    {
+        "name" : "Scrambler/ Descrambler",
+        "cost" : "500"
+    },
+    {
+        "name" : "Smart Glasses",
+        "cost" : "500"
+    },
+    {
+        "name" : "Tech Bag",
+        "cost" : "500"
+    },
+    {
+        "name" : "Techscanner",
+        "cost" : "1000"
+    },
+    {
+        "name" : "Techtool",
+        "cost" : "100"
+    },
+    {
+        "name" : "Tent & Camping Equipment",
+        "cost" : "50"
+    },
+    {
+        "name" : "Vial of Biotoxin",
+        "cost" : "500"
+    },
+    {
+        "name" : "Vial of Poison",
+        "cost" : "100"
+    },
+    {
+        "name" : "Video Camera",
+        "cost" : "100"
+    },
+    {
+        "name" : "Virtuality Goggles",
+        "cost" : "100"
+    }   
+]
+        

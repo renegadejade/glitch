@@ -1,0 +1,23 @@
+[
+    {
+        "name" : "Black Lace",
+        "cost" : "50"
+    },
+    {
+        "name" : "Blue Glass",
+        "cost" : "20"
+    },
+    {
+        "name" : "Boost",
+        "cost" : "50"
+    },
+    {
+        "name" : "Smash",
+        "cost" : "10"
+    },
+    {
+        "name" : "Synthcoke",
+        "cost" : "20"
+    }
+]
+        

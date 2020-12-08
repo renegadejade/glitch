@@ -1,0 +1,63 @@
+[
+    {
+        "name" : "Combat Knife",
+        "cost" : "50",
+        "type" : "Light Melee Weapon"
+    },
+    {
+        "name" : "Tomahawk",
+        "cost" : "50",
+        "type" : "Light Melee Weapon"
+    },
+    {
+        "name" : "Baseball Bat",
+        "cost" : "50",
+        "type" : "Medium Melee Weapon"
+    },
+    {
+        "name" : "Crowbar",
+        "cost" : "50",
+        "type" : "Medium Melee Weapon"
+    },
+    {
+        "name" : "Machete",
+        "cost" : "50",
+        "type" : "Medium Melee Weapon"
+    },
+    {
+        "name" : "Lead Pipe",
+        "cost" : "100",
+        "type" : "Heavy Melee Weapon"
+    },
+    {
+        "name" : "Sword",
+        "cost" : "100",
+        "type" : "Heavy Melee Weapon"
+    },
+    {
+        "name" : "Spiked Bat",
+        "cost" : "100",
+        "type" : "Heavy Melee Weapon"
+    },
+    {
+        "name" : "Chainsaw",
+        "cost" : "500",
+        "type" : "Very Heavy Melee Weapon"
+    },
+    {
+        "name" : "Sledgehammer",
+        "cost" : "500",
+        "type" : "Very Heavy Melee Weapon"
+    },
+    {
+        "name" : "Helicopter Blades",
+        "cost" : "500",
+        "type" : "Very Heavy Melee Weapon"
+    },
+    {
+        "name" : "Naginata",
+        "cost" : "500",
+        "type" : "Very Heavy Melee Weapon"
+    }
+]
+        

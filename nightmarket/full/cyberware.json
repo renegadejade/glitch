@@ -1,0 +1,479 @@
+[
+    {
+        "name" : "Biomonitor",
+        "cost" : "100",
+        "type" : "Fasionware"
+    },
+    {
+        "name" : "Chemskin",
+        "cost" : "100",
+        "type" : "Fashionware"
+    },
+    {
+        "name" : "EMP Threading",
+        "cost" : "10",
+        "type" : "Fashionware"
+    },
+    {
+        "name" : "Light Tattoo",
+        "cost" : "100",
+        "type" : "Fashionware"
+    },
+    {
+        "name" : "Shift Tacts",
+        "cost" : "100",
+        "type" : "Fashionware"
+    },
+    {
+        "name" : "Skinwatch",
+        "cost" : "100",
+        "type" : "Fashionware"
+    },
+    {
+        "name" : "Techhair",
+        "cost" : "100",
+        "type" : "Fashionware"
+    },
+    {
+        "name" : "Neural Link",
+        "cost" : "500",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Braindance Recorder",
+        "cost" : "500",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Chipware Socket",
+        "cost" : "500",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Interface Plugs",
+        "cost" : "500",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Kerenzikov",
+        "cost" : "500",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Sandevistan",
+        "cost" : "500",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Chemical Analyzer",
+        "cost" : "500",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Memory Chip",
+        "cost" : "10",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Olfactory Boost",
+        "cost" : "100",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Pain Editor",
+        "cost" : "1000",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Skill Chip (Expensive)",
+        "cost" : "500",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Skill Chip (Very Expensive)",
+        "cost" : "1000",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Tactile Boost",
+        "cost" : "100",
+        "type" : "Neuralware"
+    },
+    {
+        "name" : "Cybereye",
+        "cost" : "100",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Anti-Dazzle",
+        "cost" : "100",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Chyron",
+        "cost" : "100",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Color Shift",
+        "cost" : "100",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Dartgun",
+        "cost" : "500",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Image Enhance",
+        "cost" : "500",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Low Light/Infrared/UV",
+        "cost" : "500",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "MicroOptics",
+        "cost" : "100",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "MicroVideo",
+        "cost" : "500",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Radiation Detector",
+        "cost" : "1000",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Targeting Scope",
+        "cost" : "500",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "TeleOptics",
+        "cost" : "500",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Virtuality",
+        "cost" : "100",
+        "type" : "Cyberoptics"
+    },
+    {
+        "name" : "Cyberaudio Suite",
+        "cost" : "500",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Amplified Hearing",
+        "cost" : "100",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Bug Detector",
+        "cost" : "100",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Homing Tracer",
+        "cost" : "100",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Internal Agent",
+        "cost" : "100",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Level Damper",
+        "cost" : "100",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Radio Communicator",
+        "cost" : "100",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Radio Scanner/Music Player",
+        "cost" : "50",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Radar Detector",
+        "cost" : "500",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Scrambler Descrambler",
+        "cost" : "100",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "Voice Stress Analyzer",
+        "cost" : "100",
+        "type" : "Cyberaudio"
+    },
+    {
+        "name" : "AudioVox",
+        "cost" : "500",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Contraceptive Implant",
+        "cost" : "10",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Enhanced Antibodies",
+        "cost" : "500",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Cybersnake",
+        "cost" : "1000",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Gills",
+        "cost" : "1000",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Grafted Muscle and Bone Lace",
+        "cost" : "1000",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Independent Air Supply",
+        "cost" : "1000",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Midnight Lady™ Sexual Implant",
+        "cost" : "100",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Mr. Studd™ Sexual Implant",
+        "cost" : "100",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Nasal Filters",
+        "cost" : "100",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Radar/Sonar Implant",
+        "cost" : "1000",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Toxin Binders",
+        "cost" : "100",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Vampyres",
+        "cost" : "500",
+        "type" : "Internal Body Cyberware"
+    },
+    {
+        "name" : "Hidden Holster",
+        "cost" : "500",
+        "type" : "External Body Cyberware"
+    },
+    {
+        "name" : "Skin Weave",
+        "cost" : "500",
+        "type" : "External Body Cyberware"
+    },
+    {
+        "name" : "Subdermal Armor",
+        "cost" : "1000",
+        "type" : "External Body Cyberware"
+    },
+    {
+        "name" : "Subdermal Pocket",
+        "cost" : "100",
+        "type" : "External Body Cyberware"
+    },
+    {
+        "name" : "Cyberarm",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Standard Hand",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Big Knucks",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Cyberdeck",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Grapple Hand",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Popup Grenade Launcher",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Popup Melee Weapon",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Popup Shield",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Popup Ranged Weapon",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Quick Change Mount",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Rippers",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Scratchers",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Shoulder Cam",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Slice 'N Dice",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Subdermal Grip",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Techscanner",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Tool Hand",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Wolvers",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Cyberleg",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Standard Foot",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Grip Foot",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Jump Booster",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Skate Foot",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Talon Foot",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Web Foot",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Hardened Shielding",
+        "cost" : "1000",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Plastic Covering",
+        "cost" : "100",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Realskinn™ Covering",
+        "cost" : "500",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Superchrome™ Covering",
+        "cost" : "1000",
+        "type" : "Cyberlimbs"
+    },
+    {
+        "name" : "Artificial Shoulder Mount",
+        "cost" : "1000",
+        "type" : "Borgware"
+    },
+    {
+        "name" : "Implanted Linear Frame ∑ (Sigma)",
+        "cost" : "1000",
+        "type" : "Borgware"
+    },
+    {
+        "name" : "Implanted Linear Frame ß (Beta)",
+        "cost" : "5000",
+        "type" : "Borgware"
+    },
+    {
+        "name" : "MultiOptic Mount",
+        "cost" : "1000",
+        "type" : "Borgware"
+    },
+    {
+        "name" : "Snsor Array",
+        "cost" : "1000",
+        "type" : "Borgware"
+    }
+    
+]
+        

@@ -1,0 +1,155 @@
+[
+    {
+        "type" : "Food & Drugs",
+        "shelves" : [
+            "Canned Goods 10eb (Cheap)",
+            "Pakaged Goods 10eb (Cheap)",
+            "Frozen Goods 10eb (Cheap)",
+            "Bags of Grain 20eb (Everyday)",
+            "Kibble Pack 103b (Cheap)",
+            "Bags of Prepak 20eb (Everyday)",
+            "Street Drugs of 20eb or less",
+            "Poor Quality Alchohol 10eb (Cheap)",
+            "Alcohol 20eb (Everyday)",
+            "Excellent Quality Alcohol 100eb (Premium)",
+            "MRE 10eb (Cheap)",
+            "Live Chicken 50eb (Costly)",
+            "Live Fish 50eb (Costly)",
+            "Fresh Fruits 50eb (Costly)",
+            "Fresh Vegtables 50eb (Costly)",
+            "Root Vegetables 50eb (Costly)",
+            "Live Pigs 100eb (Premium)",
+            "Exotic Fruits 100eb (Premium)",
+            "Exotic Vegetables 100eb (Premium)",
+            "Street Drugs of exactly 50eb"
+        ]
+
+    },
+    {
+        "type" : "Personal Electronics",
+        "shelves" : [
+            "Agent 100eb (Pemium)",
+            "Programs or Hardware of 100eb or less",
+            "Audio Recorder 100eb (Presium)",
+            "Bug Detector 500eb (Expensive)",
+            "Cheamical Analyzer 1,000eb (Very Expensive)",
+            "Computer 50eb (Costly)",
+            "Cyberdeck 500eb (Expensive)",
+            "Disposable Cell Phone 50eb (Costly)",
+            "Electric Guitar or Other Instrument 500eb (Expensive)",
+            "Programs or Hardware of exactly 500eb",
+            "Medscanner 1,000eb (Very Expensive)",
+            "Homing Tracer 500eb (Expensive)",
+            "Radio Communicator 100eb (Premium)",
+            "Techscanner 1,000eb (Very Expensive)",
+            "Smart Glasses 500eb (Expensive)",
+            "Radar Detector 500eb (Expensive)",
+            "Scrambler/ Descrambler 500eb (Expensive)",
+            "Radio Scanner/ Music Player 50eb (Costly)",
+            "Braindance Viewer 1,000eb (Very Expensive)",
+            "Virtuality Goggles 100eb (Premium)"
+        ]
+    },
+    {
+        "type" : "Weapons & Armor",
+        "shelves" : [
+            "Medium Pistol 50eb (Costly)",
+            "Heavy Pistol or Very Heavy Pistol 100eb (Premium)",
+            "SMG 100eb (Premium)",
+            "Heavy SMG 100eb (Premium)",
+            "Shotgun 500eb (Expensive)",
+            "Assault Rifle 500eb (Expensive)",
+            "Sniper Rifle 500eb (Expensive)",
+            "Bows or Crossbow 100eb (Premium)",
+            "Grenade Launcher or Rocket Launcher 500eb (Expensive)",
+            "Ammunition of 500eb or less",
+            "A Single Exotic Weapon of GM’s choice",
+            "Light Melee Weapon 50eb (Costly)",
+            "Medium Melee Weapon 50eb (Costly)",
+            "Heavy Melee Weapon 100eb (Premium)",
+            "Very Heavy Melee Weapon 100eb (Premium)",
+            "Armor of 100eb or less",
+            "Armor of exactly 500eb",
+            "Armor of exactly 1,000eb",
+            "Weapon Attachments of 100eb or less",
+            "Weapon Attachments of 500eb or higher"
+        ]
+    },
+    {
+        "type" : "Cyberware",
+        "shelves" : [
+            "Cybereye 100eb (Premium)",
+            "Cyberaudio Suite 500eb (Expensive)",
+            "Neural Link 500eb (Expensive)",
+            "Cyberarm 500eb (Expensive)",
+            "Cyberleg 100eb (Premium)",
+            "External Cyberware of exactly 1,000eb",
+            "External Cyberware of 500eb or less",
+            "Internal Cyberware of exactly 1,000eb",
+            "Internal Cyberware of 500eb or less",
+            "Cybereye Option of exactly 1,000eb",
+            "Cybereye Option of 500eb or less",
+            "Cyberaudio Option of exactly 1,000eb",
+            "Cyberaudio Option of 500eb or less",
+            "Neuralware Option of exactly 1,000eb",
+            "Neuralware Option of 500eb or less",
+            "Cyberlimb Option of exactly 1,000eb",
+            "Cyberlimb Option of 500eb or less",
+            "Fashionware of GM’s Choice",
+            "Borgware of GM’s Choice",
+            "Any Cyberware of GM’s Choice"
+        ]
+    },
+    {
+        "type" : "Clothing & Fashionware",
+        "shelves" : [
+            "Bag Lady Chic",
+            "Gang Colors",
+            "Generic Chic",
+            "Bohemian",
+            "Leisureware",
+            "Nomad Leathers",
+            "Asia Pop",
+            "Urban Flash",
+            "Businesswear",
+            "High Fashion",
+            "Biomonitor 100eb (Premium)",
+            "Chemskin 100eb (Premium)",
+            "EMP Threading 10eb (Cheap)",
+            "Light Tattoo 100eb (Premium)",
+            "Shift Tacts 100eb (Premium)",
+            "Skinwatch 100eb (Premium)",
+            "Techhair 100eb (Premium)",
+            "Generic Chic",
+            "Leisurewear",
+            "Gang Colors"
+        ]
+    },
+    {
+        "type" : "Survival Gear",
+        "shelves" : [
+            "Anti-Smog Breathing Mask 20eb (Everyday)",
+            "Auto Level Dampening Ear Protectors 1,000eb (Very Expensive)",
+            "Binoculars 50eb (Costly)",
+            "Carryall 20eb (Everyday)",
+            "Flashlight 20eb (Everyday)",
+            "Duct Tape 20eb (Everyday)",
+            "Inflatable Bed & Sleep-bag 20eb (Everyday)",
+            "Lock Picking Set 20eb (Everyday)",
+            "Handcuffs 50eb (Costly)",
+            "Medtech Bag 100eb (Premium)",
+            "Tent and Camping Equipment 50eb (Costly)",
+            "Rope (60m/yds) 20eb (Everyday)",
+            "Techtool 100eb (Premium)",
+            "Personal CarePak 20eb (Everyday)",
+            "Radiation Suit 1,000eb (Very Expensive)",
+            "Road Flare 10eb (Cheap)",
+            "Grapple Gun 100eb (Premium)",
+            "Tech Bag 500eb (Expensive)",
+            "Shovel or Axe 50eb (Costly)",
+            "Airhypo 50eb (Costly)"
+ 
+        ]
+    }
+]
+        
