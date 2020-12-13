@@ -125,3 +125,4 @@ dmypy.json
 .pyre/
 
 .glitch-env/
+glitch-bot-dev-google-creds.json
