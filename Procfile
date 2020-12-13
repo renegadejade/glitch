@@ -1,1 +1,1 @@
-worker: python glitch.py
+worker: python3 glitch.py
