@@ -1,7 +1,5 @@
-import os
+from os import environ
 from google.cloud import firestore
-from os.path import join, dirname
-from dotenv import load_dotenv
 import discord
 from discord.ext import commands
 import random
@@ -12,9 +10,7 @@ import json
 
 # Project ID is determined by the GCLOUD_PROJECT environment variable
 DB = firestore.Client()
-dotenv_path = join(dirname(__file__), '.env')
-load_dotenv(dotenv_path)
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = environ['DISCORD_TOKEN']
 COMMAND_PREFIX = "!"
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
