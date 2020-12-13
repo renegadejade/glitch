@@ -1,5 +1,7 @@
-from os import environ
+import os
 from google.cloud import firestore
+from os.path import join, dirname
+from dotenv import load_dotenv
 import discord
 from discord.ext import commands
 import random
@@ -10,7 +12,9 @@ import json
 
 # Project ID is determined by the GCLOUD_PROJECT environment variable
 DB = firestore.Client()
-TOKEN = environ['DISCORD_TOKEN']
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
+TOKEN = os.getenv('DISCORD_TOKEN')
 COMMAND_PREFIX = "!"
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
@@ -142,16 +146,16 @@ async def view(ctx):
     user_ref = DB.collection("users").document(str(ctx.message.author.id))
     user = user_ref.get()
     stats = ""
-    stats += "INT:" + user.to_dict()["intelligence"] + "|"
-    stats += "REF:" + user.to_dict()["reflexes"] + "|"
-    stats += "DEX:" + user.to_dict()["dexterity"] + "|"
-    stats += "TECH:" + user.to_dict()["technique"] + "|"
+    stats += "INT:" + user.to_dict()["int"] + "|"
+    stats += "REF:" + user.to_dict()["ref"] + "|"
+    stats += "DEX:" + user.to_dict()["dex"] + "|"
+    stats += "TECH:" + user.to_dict()["tech"] + "|"
     stats += "COOL:" + user.to_dict()["cool"] + "|"
-    stats += "WILL:" + user.to_dict()["willpower"] + "|"
+    stats += "WILL:" + user.to_dict()["will"] + "|"
     stats += "LUCK:" + user.to_dict()["luck"] + "|"
-    stats += "MOVE:" + user.to_dict()["movement"] + "|"
+    stats += "MOVE:" + user.to_dict()["move"] + "|"
     stats += "BODY:" + user.to_dict()["body"] + "|"
-    stats += "EMP:" + user.to_dict()["empathy"]
+    stats += "EMP:" + user.to_dict()["emp"]
 
     embed = discord.Embed(title=user.to_dict()["name"], color=0xff69b4)
     # embed.add_field(name="INT", value=user.to_dict()["intelligence"], inline=True)
@@ -192,7 +196,7 @@ async def set_subcommand(ctx, stat, val):
         )
         character = character_ref.get()
         results = character.to_dict()["name"]+ "'s " + stat.upper() + " is now set to " + str(val)
-    if stat.lower() in SKILLS and int(val) is not None:
+    elif stat.lower() in SKILLS and int(val) is not None:
         character_ref = DB.collection("users").document(str(ctx.message.author.id))
         character_ref.set(
             {
