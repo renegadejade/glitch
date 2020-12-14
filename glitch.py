@@ -217,7 +217,7 @@ async def skillcheck(ctx, skill):
     skill_level = 0
     stat_level = 0
     stat = ""
-    if skill.lower() in character.to_dict()[skill] and SKILLS:
+    if skill.lower() in character.to_dict() and SKILLS:
         skill_level = skill_level = int(character.to_dict()[skill])
     elif skill.lower() in SKILLS:
         character_ref.set(
@@ -225,6 +225,9 @@ async def skillcheck(ctx, skill):
                 skill : "0"
             }, merge=True
         )
+    else:
+        await ctx.send("That's not a skill. Try again.")
+        return
     if skill.lower() in SKILLS: 
         if skill.lower() in WILL_SKILLS:
             stat = "WILL"
