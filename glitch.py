@@ -8,6 +8,7 @@ import random
 import math
 import re
 import json
+import d20
 
 
 # Project ID is determined by the GCLOUD_PROJECT environment variable
@@ -191,7 +192,7 @@ async def set_subcommand(ctx, stat, val):
         character_ref = DB.collection("users").document(str(ctx.message.author.id))
         character_ref.set(
             {
-                stat : val
+                stat.lower() : val
             }, merge=True
         )
         character = character_ref.get()
@@ -200,7 +201,7 @@ async def set_subcommand(ctx, stat, val):
         character_ref = DB.collection("users").document(str(ctx.message.author.id))
         character_ref.set(
             {
-                stat : val
+                stat.lower() : val
             }, merge=True
         )
         character = character_ref.get()
@@ -263,6 +264,11 @@ async def skillcheck(ctx, skill):
         total -= crit
         results += "\n**CRITICAL FAILURE**: Rolling...\nCrit Roll: " + str(crit) + "\nNew Total: **" + str(total) + "**"
 
+    await ctx.send(results)
+
+@bot.command()
+async def roll(ctx, rollStr):
+    results = d20.roll(rollStr)
     await ctx.send(results)
 
 bot.run(TOKEN)
