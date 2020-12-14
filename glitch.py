@@ -206,7 +206,7 @@ async def set_subcommand(ctx, stat, val):
         character = character_ref.get()
         results = character.to_dict()["name"]+ "'s " + stat + " is now set to " + str(val)
     else:
-        results = "Bad input. Try again."
+        results = "\"" + stat + "\" isn't a STAT or Skill. Try again."
     
     await ctx.send(results)
 
@@ -217,14 +217,15 @@ async def skillcheck(ctx, skill):
     skill_level = 0
     stat_level = 0
     stat = ""
-    if skill.lower() in SKILLS:
-        if character.to_dict()[skill.lower()] is None:
-            character_ref.set(
+    if skill.lower() in character.to_dict()[skill] and SKILLS:
+        skill_level = skill_level = int(character.to_dict()[skill])
+    elif skill.lower() in SKILLS:
+        character_ref.set(
             {
-                skill : 0
+                skill : "0"
             }, merge=True
         )
-        skill_level = int(character.to_dict()[skill])
+    if skill.lower() in SKILLS: 
         if skill.lower() in WILL_SKILLS:
             stat = "WILL"
             stat_level = int(character.to_dict()["will"])
