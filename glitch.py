@@ -218,6 +218,12 @@ async def skillcheck(ctx, skill):
     stat_level = 0
     stat = ""
     if skill.lower() in SKILLS:
+        if character.to_dict()[skill.lower()] is None:
+            character_ref.set(
+            {
+                skill : 0
+            }, merge=True
+        )
         skill_level = int(character.to_dict()[skill])
         if skill.lower() in WILL_SKILLS:
             stat = "WILL"
