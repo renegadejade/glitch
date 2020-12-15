@@ -266,7 +266,7 @@ async def skillcheck(ctx, skill):
 
     await ctx.send(results)
 
-@bot.command()
+@bot.command(aliases=["r"])
 async def roll(ctx, rollStr):
     results = d20.roll(rollStr)
     await ctx.send(results)
