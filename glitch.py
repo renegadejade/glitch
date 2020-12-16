@@ -10,6 +10,7 @@ import re
 import json
 import d20
 import cogs.character
+import variables
 
 
 dotenv_path = join(dirname(__file__), '.env')
@@ -19,16 +20,7 @@ COMMAND_PREFIX = "!"
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
 NM_TYPES = ["Ammunition", "Armor", "Cyberdeck Hardware", "Cyberware", "Exotic Weapons", "Gear", "Melee Weapons", "Programs", "Ranged Weapons", "Street Drugs", "Weapon Attachments"]
-STATS = ["int", "ref", "dex", "tech", "cool", "will", "luck", "move", "body", "emp"]
-SKILLS = ["concentration", "lip reading", "conceal object", "reveal object", "lip reading", "perception", "tracking", "accounting", "animal handling", "bureaucray", "business", "composition", "criminology", "cryptography", "deduction", "education", "gamble", "language", "library search", "local expert", "science", "tactics", "wilderness survival", "drive land vehicle", "pilot air vehicle", "pilot sea vehicle", "riding", "archery", "autofire", "handgun", "heavy weapons", "shoulder arms", "athletics", "contortionist", "dance", "stealth", "brawling", "evasion", "martial arts", "melee weapon", "play instrument", "air vehicle tech", "basic tech", "cybertech", "demolitions", "electronics tech", "security tech", "first aid", "forgery", "land vehicle tech", "paint", "draw", "sculpt", "paramedic", "photography", "film", "pick lock", "pick pocket", "sea vehicle tech", "weaponstech", "acting", "bribery", "interrogation", "persuasion", "personal grooming", "streewise", "trading", "wardrobe and style", "acting", "bribery", "interrogation", "persuasion", "personal grooming", "streewise", "trading", "wardrobe and style", "concentration", "endurance", "resist torture", "resist drugs", "conversation", "human perception"]
 
-INT_SKILLS = ["conceal object", "reveal object", "lip reading", "perception", "tracking", "accounting", "animal handling", "bureaucray", "business", "composition", "criminology", "cryptography", "deduction", "education", "gamble", "language", "library search", "local expert", "science", "tactics", "wilderness survival"]
-REF_SKILLS = ["drive land vehicle", "pilot air vehicle", "pilot sea vehicle", "riding", "archery", "autofire", "handgun", "heavy weapons", "shoulder arms"]
-DEX_SKILLS = ["athletics", "contortionist", "dance", "stealth", "brawling", "evasion", "martial arts", "melee weapon"]
-TECH_SKILLS = ["play instrument", "air vehicle tech", "basic tech", "cybertech", "demolitions", "electronics tech", "security tech", "first aid", "forgery", "land vehicle tech", "paint", "draw", "sculpt", "paramedic", "photography", "film", "pick lock", "pick pocket", "sea vehicle tech", "weaponstech"]
-COOL_SKILLS = ["acting", "bribery", "interrogation", "persuasion", "personal grooming", "streewise", "trading", "wardrobe and style"]
-WILL_SKILLS = ["concentration", "endurance", "resist torture", "resist drugs"]
-EMP_SKILLS = ["conversation", "human perception"]
 
 # NM_TYPES = ["ammunition", "armor", "cyberdeck_hardware", "cyberware", "exoticweapons", "gear", "melee_weapons", "programs", "ranged_weapons", "street_drugs", "weapon_attachments"]
 AMMUNITION = []
@@ -171,56 +163,17 @@ async def view(ctx):
     embed.add_field(name="STATS", value=stats, inline=True)
     await ctx.send(embed=embed)
 
-@bot.group(name="character", aliases=["c", "char"], invoke_without_command=True, help="Manage character sheet (unfinished)")
-async def character_group(ctx):
-    await ctx.send("No subcommand was found!")
-
-@character_group.command(name="name", help="Set your character's name")
-async def name_subcommand(ctx, name):
-    data = {
-        "name" : name
-    }
-    DB.collection("users").document(str(ctx.message.author.id)).set(data, merge=True)
-    results = "Your character's name is " + name
-    
-    await ctx.send(results)
-
-@character_group.command(name="set", help="Set a STAT or Skill to a certain level")
-async def set_subcommand(ctx, stat, val):
-    if stat.lower() in STATS and int(val) is not None:
-        character_ref = DB.collection("users").document(str(ctx.message.author.id))
-        character_ref.set(
-            {
-                stat.lower() : val
-            }, merge=True
-        )
-        character = character_ref.get()
-        results = character.to_dict()["name"]+ "'s " + stat.upper() + " is now set to " + str(val)
-    elif stat.lower() in SKILLS and int(val) is not None:
-        character_ref = DB.collection("users").document(str(ctx.message.author.id))
-        character_ref.set(
-            {
-                stat.lower() : val
-            }, merge=True
-        )
-        character = character_ref.get()
-        results = character.to_dict()["name"]+ "'s " + stat + " is now set to " + str(val)
-    else:
-        results = "\"" + stat + "\" isn't a STAT or Skill. Try again."
-    
-    await ctx.send(results)
-
 @bot.command(aliases=["sc"])
 async def skillcheck(ctx, skill):
-    character_ref = DB.collection("users").document(str(ctx.message.author.id))
-    character = character_ref.get()
+    char_ref = DB.collection("users").document(str(ctx.message.author.id))
+    char = char_ref.get()
     skill_level = 0
     stat_level = 0
     stat = ""
-    if skill.lower() in character.to_dict() and SKILLS:
-        skill_level = skill_level = int(character.to_dict()[skill])
-    elif skill.lower() in SKILLS:
-        character_ref.set(
+    if skill.lower() in char.to_dict() and variables.SKILLS:
+        skill_level = skill_level = int(char.to_dict()[skill])
+    elif skill.lower() in variables.SKILLS:
+        char_ref.set(
             {
                 skill : "0"
             }, merge=True
@@ -228,31 +181,31 @@ async def skillcheck(ctx, skill):
     else:
         await ctx.send("That's not a skill. Try again.")
         return
-    if skill.lower() in SKILLS: 
-        if skill.lower() in WILL_SKILLS:
+    if skill.lower() in variables.SKILLS: 
+        if skill.lower() in variables.WILL_SKILLS:
             stat = "WILL"
-            stat_level = int(character.to_dict()["will"])
-        if skill.lower() in INT_SKILLS:
+            stat_level = int(char.to_dict()["will"])
+        if skill.lower() in variables.INT_SKILLS:
             stat = "INT"
-            stat_level = int(character.to_dict()["int"])
-        if skill.lower() in REF_SKILLS:
+            stat_level = int(char.to_dict()["int"])
+        if skill.lower() in variables.REF_SKILLS:
             stat = "REF"
-            stat_level = int(character.to_dict()["ref"])
-        if skill.lower() in DEX_SKILLS:
+            stat_level = int(char.to_dict()["ref"])
+        if skill.lower() in variables.DEX_SKILLS:
             stat = "DEX"
-            stat_level = int(character.to_dict()["dex"])
-        if skill.lower() in TECH_SKILLS:
+            stat_level = int(char.to_dict()["dex"])
+        if skill.lower() in variables.TECH_SKILLS:
             stat = "TECH"
-            stat_level = int(character.to_dict()["tech"])
-        if skill.lower() in COOL_SKILLS:
+            stat_level = int(char.to_dict()["tech"])
+        if skill.lower() in variables.COOL_SKILLS:
             stat = "COOL"
-            stat_level = int(character.to_dict()["cool"])
-        if skill.lower() in EMP_SKILLS:
+            stat_level = int(char.to_dict()["cool"])
+        if skill.lower() in variables.EMP_SKILLS:
             stat = "EMP"
-            stat_level = int(character.to_dict()["emp"])
+            stat_level = int(char.to_dict()["emp"])
     roll = random.randint(1,10)
     total = skill_level + stat_level + roll
-    results = character.to_dict()["name"] + " rolled a " + str(roll) + " for a total result of: **" + str(total) + "**"
+    results = char.to_dict()["name"] + " rolled a " + str(roll) + " for a total result of: **" + str(total) + "**"
     results += "\n" + stat + ": " + str(stat_level) + "|" + skill.capitalize() + ": " + str(skill_level) + "|Roll: " + str(roll)
     if roll == 10:
         crit = random.randint(1,10)
