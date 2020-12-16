@@ -1,4 +1,6 @@
-# glitch
- Discord bot for Cyberpunk RED
+# Glitch
+Discord bot for Cyberpunk RED
 
-Disclaimer: This project is not in any way associated with, or endorsed by, R. Talsorian Games.
+Documentation: https://glitch.red/
+
+Disclaimer: Cyberpunk, Cyberpunk RED and all related copyrights and trademarks are owned by [R.Talsorian Games](https://rtalsoriangames.com/). The bot and its author are not affiliated with, nor endorsed by, R.Talsorian Games in any way. 
