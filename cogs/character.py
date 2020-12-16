@@ -30,7 +30,7 @@ class Character(commands.Cog):
         stats = stats_ref.get()
         skills_ref = DB.collection("skills")
         skills = skills_ref.get()
-
+        print(str(stats))
         if stat.lower() in stats and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id))
             character_ref.set(
