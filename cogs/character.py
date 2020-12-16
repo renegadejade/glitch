@@ -31,7 +31,7 @@ class Character(commands.Cog):
         skills_ref = DB.collection("skills")
         skills = skills_ref.get()
 
-        if stat.lower() in stats.to_dict() and int(val) is not None:
+        if stat.lower() in stats and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id))
             character_ref.set(
                 {
@@ -40,7 +40,7 @@ class Character(commands.Cog):
             )
             character = character_ref.get()
             results = character.to_dict()["name"]+ "'s " + stat.upper() + " is now set to " + str(val)
-        elif stat.lower() in skills.to_dict() and int(val) is not None:
+        elif stat.lower() in skills and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id))
             character_ref.set(
                 {
