@@ -12,7 +12,6 @@ class Character(commands.Cog):
 
     @commands.group(aliases=["c", "char"], invoke_without_command=True)
     async def character(self, ctx):
-        """Commands to help track combat."""
         await ctx.send(f"Incorrect usage. Use `{ctx.prefix}help character` for help.")
 
 
@@ -27,7 +26,12 @@ class Character(commands.Cog):
 
     @character.command(name="set", help="Set a STAT or Skill to a certain level")
     async def set(self, ctx, stat, val):
-        if stat.lower() in variables.STATS and int(val) is not None:
+        stats_ref = DB.collection("stats")
+        stats = stats_ref.get()
+        skills_ref = DB.collection("skills")
+        skills = skills_ref.get()
+
+        if stat.lower() in stats.to_dict() and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id))
             character_ref.set(
                 {
@@ -36,7 +40,7 @@ class Character(commands.Cog):
             )
             character = character_ref.get()
             results = character.to_dict()["name"]+ "'s " + stat.upper() + " is now set to " + str(val)
-        elif stat.lower() in variables.SKILLS and int(val) is not None:
+        elif stat.lower() in skills.to_dict() and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id))
             character_ref.set(
                 {
