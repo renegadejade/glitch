@@ -127,3 +127,4 @@ dmypy.json
 .glitch-env/
 glitch-bot-dev-google-creds.json
 .vscode/
+glitch.code-workspace

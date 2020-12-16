@@ -1,5 +1,5 @@
 import os
-from google.cloud import firestore
+from data import DB
 from os.path import join, dirname
 from dotenv import load_dotenv
 import discord
@@ -9,10 +9,9 @@ import math
 import re
 import json
 import d20
+import cogs.character
 
 
-# Project ID is determined by the GCLOUD_PROJECT environment variable
-DB = firestore.Client()
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -271,4 +270,5 @@ async def roll(ctx, rollStr):
     results = d20.roll(rollStr)
     await ctx.send(results)
 
+bot.load_extension("cogs.character")
 bot.run(TOKEN)
