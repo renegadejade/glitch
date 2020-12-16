@@ -25,32 +25,39 @@ class Character(commands.Cog):
         await ctx.send(results)
 
     @character.command(name="set", help="Set a STAT or Skill to a certain level")
-    async def set(self, ctx, stat, val):
-        stats_ref = DB.collection("stats")
-        stats = stats_ref.get()
-        skills_ref = DB.collection("skills")
-        skills = skills_ref.get()
-        print(str(stats))
-        if stat.lower() in stats and int(val) is not None:
+    async def set(self, ctx, statorskill, val):
+        stats_stream = DB.collection("stats").stream()
+        skills_stream = DB.collection("skills").stream()
+        
+        stats = []
+        skills = []
+
+        for stat in stats_stream:
+            stats.append(stat.id) 
+        for skill in skills_stream:
+            skills.append(skill.id)
+
+        print(stats)
+        if statorskill.lower() in stats and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id))
             character_ref.set(
                 {
-                    stat.lower() : val
+                    statorskill.lower() : val
                 }, merge=True
             )
             character = character_ref.get()
-            results = character.to_dict()["name"]+ "'s " + stat.upper() + " is now set to " + str(val)
-        elif stat.lower() in skills and int(val) is not None:
+            results = character.to_dict()["name"]+ "'s " + statorskill.capitalize() + " is now set to " + str(val)
+        elif statorskill.lower() in skills and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id))
             character_ref.set(
                 {
-                    stat.lower() : val
+                    statorskill.lower() : val
                 }, merge=True
             )
             character = character_ref.get()
-            results = character.to_dict()["name"]+ "'s " + stat + " is now set to " + str(val)
+            results = character.to_dict()["name"]+ "'s " + statorskill.capitalize() + " is now set to " + str(val)
         else:
-            results = "\"" + stat + "\" isn't a STAT or Skill. Try again."
+            results = "\"" + statorskill + "\" isn't a STAT or Skill. Try again."
         
         await ctx.send(results)
 
