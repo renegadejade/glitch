@@ -31,7 +31,7 @@ class Character(commands.Cog):
             if character.to_dict()["name"] == name:
                 character_id = character.id
         DB.collection("users").document(str(ctx.message.author.id)).set({"active" : character_id})
-        results = "Your new character, **" + name + "** is loaded and ready to go!"
+        results = "Your new character, **" + name + "**, is loaded and ready to go!"
         await ctx.send(results)
 
     @character.command(name="load", help="Loads a character and makes them active.")
@@ -83,7 +83,7 @@ class Character(commands.Cog):
                 }, merge=True
             )
             character = character_ref.get()
-            results = "**" + character.to_dict()["name"]+ "'s** " + statorskill.capitalize() + " is now set to " + str(val)
+            results = "**" + character.to_dict()["name"]+ "'s** *" + statorskill.capitalize() + "* is now set to " + str(val) + "."
         else:
             results = "\"" + statorskill + "\" isn't a STAT or Skill. Try again."
         
