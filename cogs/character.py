@@ -51,14 +51,14 @@ class Character(commands.Cog):
         
         
 
-    @character.command(name="name", help="Set your character's name")
-    async def name(self, ctx, name):
-        data = {
-            "name" : name
-        }
-        DB.collection("users").document(str(ctx.message.author.id)).set(data, merge=True)
-        results = "Your character's new name is " + name + "."
-        await ctx.send(results)
+    # @character.command(name="name", help="Set your character's name")
+    # async def name(self, ctx, name):
+    #     data = {
+    #         "name" : name
+    #     }
+    #     DB.collection("users").document(str(ctx.message.author.id)).set(data, merge=True)
+    #     results = "Your character's new name is " + name + "."
+    #     await ctx.send(results)
 
     @character.command(name="set", help="Set a STAT or Skill to a certain level")
     async def set(self, ctx, statorskill, val):
