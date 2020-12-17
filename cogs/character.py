@@ -23,10 +23,6 @@ class Character(commands.Cog):
                 await ctx.send(results)
                 return
         DB.collection("users").document(str(ctx.message.author.id)).collection("characters").document(name).set(data)
-        # character_id = name
-        # for character in characters:
-        #     if character.to_dict()["name"] == name:
-        #         character_id = character.id
         DB.collection("users").document(str(ctx.message.author.id)).set({"active" : name})
         results = "Your new character, **" + name + "**, is loaded and ready to go!"
         await ctx.send(results)
@@ -34,10 +30,8 @@ class Character(commands.Cog):
     @character.command(name="load", help="Loads a character and makes them active.")
     async def load(self, ctx, name):
         characters = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").stream()
-        # character_id = name
         for character in characters:
             if character.id == name:
-                # character_id = character.id
                 DB.collection("users").document(str(ctx.message.author.id)).set({"active" : name})
                 results = "**" + name + "** is loaded and ready to go!"
                 await ctx.send(results)
@@ -46,8 +40,6 @@ class Character(commands.Cog):
         results = "**" + name + "** isn't one of your characters. To create them type `!character new " + name + "`."
         await ctx.send(results)
         
-        
-
     # @character.command(name="name", help="Set your character's name")
     # async def name(self, ctx, name):
     #     data = {
