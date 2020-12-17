@@ -77,7 +77,7 @@ async def ping(ctx):
 
 @bot.command()
 async def about(ctx):
-    embed = discord.Embed(title="Glitch", description="A Discord bot for playing Cyberpunk RED", color=0x850000)
+    embed = discord.Embed(title="Glitch", description="A Discord bot for playing Cyberpunk RED", color=0xC40000)
     embed.set_thumbnail(url="https://i.imgur.com/cRIB0hg.jpg")
     embed.add_field(name="Developer", value="John 'JT' Thomas", inline=False)
     embed.add_field(name="Documentation", value="https://glitch.red/", inline=False)
