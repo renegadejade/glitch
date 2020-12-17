@@ -82,6 +82,7 @@ async def about(ctx):
     embed.add_field(name="Developer", value="John 'JT' Thomas", inline=False)
     embed.add_field(name="Documentation", value="https://glitch.red/", inline=False)
     embed.add_field(name="GitHub", value="https://github.com/zensomancer/glitch/", inline=False)
+    embed.set_footer(text="The bot and its author are not affiliated with nor endorsed by R. Talsorian Games.")
     await ctx.send(embed=embed)
 
 @bot.command(aliases=["market", "nm"], help="Randomly generates a Night Market | pass -g or -c for different generators")
