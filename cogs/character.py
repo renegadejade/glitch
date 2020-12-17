@@ -1,9 +1,6 @@
 import discord
 from discord.ext import commands
 from data import DB
-import variables
-
-
 
 class Character(commands.Cog):
 
@@ -21,27 +18,27 @@ class Character(commands.Cog):
         }
         characters = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").stream()
         for character in characters:
-            if character.to_dict()["name"] == name:
+            if character.id == name:
                 results = "You already have a character named **" + name + "**. Use `!character load " + name + "` to switch to them."
                 await ctx.send(results)
                 return
-        DB.collection("users").document(str(ctx.message.author.id)).collection("characters").add(data)
-        character_id = ""
-        for character in characters:
-            if character.to_dict()["name"] == name:
-                character_id = character.id
-        DB.collection("users").document(str(ctx.message.author.id)).set({"active" : character_id})
+        DB.collection("users").document(str(ctx.message.author.id)).collection("characters").document(name).set(data)
+        # character_id = name
+        # for character in characters:
+        #     if character.to_dict()["name"] == name:
+        #         character_id = character.id
+        DB.collection("users").document(str(ctx.message.author.id)).set({"active" : name})
         results = "Your new character, **" + name + "**, is loaded and ready to go!"
         await ctx.send(results)
 
     @character.command(name="load", help="Loads a character and makes them active.")
     async def load(self, ctx, name):
         characters = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").stream()
-        character_id = ""
+        # character_id = name
         for character in characters:
-            if character.to_dict()["name"] == name:
-                character_id = character.id
-                DB.collection("users").document(str(ctx.message.author.id)).set({"active" : character_id})
+            if character.id == name:
+                # character_id = character.id
+                DB.collection("users").document(str(ctx.message.author.id)).set({"active" : name})
                 results = "**" + name + "** is loaded and ready to go!"
                 await ctx.send(results)
                 return
@@ -74,7 +71,6 @@ class Character(commands.Cog):
         for skill in skills_stream:
             skills.append(skill.id)
 
-        print(stats)
         if statorskill.lower() in stats or skills and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").document(active)
             character_ref.set(
