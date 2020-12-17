@@ -22,7 +22,7 @@ class Character(commands.Cog):
         characters = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").stream()
         for character in characters:
             if character.to_dict()["name"] == name:
-                results = "You already have a character with that name. Use `!character load [name]` to switch to them."
+                results = "You already have a character named **" + name + "**. Use `!character load " + name + "` to switch to them."
                 await ctx.send(results)
                 return
         DB.collection("users").document(str(ctx.message.author.id)).collection("characters").add(data)
@@ -42,11 +42,11 @@ class Character(commands.Cog):
             if character.to_dict()["name"] == name:
                 character_id = character.id
                 DB.collection("users").document(str(ctx.message.author.id)).set({"active" : character_id})
-                results = name + " is loaded and ready to go!"
+                results = "**" + name + "** is loaded and ready to go!"
                 await ctx.send(results)
                 return
 
-        results = name + " isn't one of your characters. To create them type `!character new " + name + "`."
+        results = "**" + name + "** isn't one of your characters. To create them type `!character new " + name + "`."
         await ctx.send(results)
         
         
