@@ -72,6 +72,8 @@ class Game(commands.Cog):
         if roll == 1:
             crit = random.randint(1,10)
             total -= crit
+            if total < 0:
+                total = 0
             results += "\n**CRITICAL FAILURE**: Rolling...\nCrit Roll: " + str(crit) + "\nNew Total: **" + str(total) + "**"
 
         await ctx.send(results)
