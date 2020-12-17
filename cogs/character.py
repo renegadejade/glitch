@@ -71,7 +71,16 @@ class Character(commands.Cog):
         for skill in skills_stream:
             skills.append(skill.id)
 
-        if statorskill.lower() in stats or skills and int(val) is not None:
+        if statorskill.lower() in stats and int(val) is not None:
+            character_ref = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").document(active)
+            character_ref.set(
+                {
+                    statorskill.lower() : val
+                }, merge=True
+            )
+            character = character_ref.get()
+            results = "**" + character.to_dict()["name"]+ "'s** *" + statorskill.capitalize() + "* is now set to " + str(val) + "."
+        if statorskill.lower() in skills and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").document(active)
             character_ref.set(
                 {
