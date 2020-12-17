@@ -83,7 +83,7 @@ class Character(commands.Cog):
                 }, merge=True
             )
             character = character_ref.get()
-            results = character.to_dict()["name"]+ "'s " + statorskill.capitalize() + " is now set to " + str(val)
+            results = "**" + character.to_dict()["name"]+ "'s** " + statorskill.capitalize() + " is now set to " + str(val)
         else:
             results = "\"" + statorskill + "\" isn't a STAT or Skill. Try again."
         
