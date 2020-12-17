@@ -10,7 +10,7 @@ import re
 import json
 import d20
 import cogs.character
-import variables
+import cogs.game
 
 
 dotenv_path = join(dirname(__file__), '.env')
@@ -173,65 +173,11 @@ async def view(ctx):
     embed.add_field(name="STATS", value=stats, inline=True)
     await ctx.send(embed=embed)
 
-@bot.command(aliases=["sc"])
-async def skillcheck(ctx, skill):
-    char_ref = DB.collection("users").document(str(ctx.message.author.id))
-    char = char_ref.get()
-    skill_level = 0
-    stat_level = 0
-    stat = ""
-    if skill.lower() in char.to_dict() and variables.SKILLS:
-        skill_level = skill_level = int(char.to_dict()[skill])
-    elif skill.lower() in variables.SKILLS:
-        char_ref.set(
-            {
-                skill : "0"
-            }, merge=True
-        )
-    else:
-        await ctx.send("That's not a skill. Try again.")
-        return
-    if skill.lower() in variables.SKILLS: 
-        if skill.lower() in variables.WILL_SKILLS:
-            stat = "WILL"
-            stat_level = int(char.to_dict()["will"])
-        if skill.lower() in variables.INT_SKILLS:
-            stat = "INT"
-            stat_level = int(char.to_dict()["int"])
-        if skill.lower() in variables.REF_SKILLS:
-            stat = "REF"
-            stat_level = int(char.to_dict()["ref"])
-        if skill.lower() in variables.DEX_SKILLS:
-            stat = "DEX"
-            stat_level = int(char.to_dict()["dex"])
-        if skill.lower() in variables.TECH_SKILLS:
-            stat = "TECH"
-            stat_level = int(char.to_dict()["tech"])
-        if skill.lower() in variables.COOL_SKILLS:
-            stat = "COOL"
-            stat_level = int(char.to_dict()["cool"])
-        if skill.lower() in variables.EMP_SKILLS:
-            stat = "EMP"
-            stat_level = int(char.to_dict()["emp"])
-    roll = random.randint(1,10)
-    total = skill_level + stat_level + roll
-    results = char.to_dict()["name"] + " rolled a " + str(roll) + " for a total result of: **" + str(total) + "**"
-    results += "\n" + stat + ": " + str(stat_level) + "|" + skill.capitalize() + ": " + str(skill_level) + "|Roll: " + str(roll)
-    if roll == 10:
-        crit = random.randint(1,10)
-        total += crit
-        results += "\n**CRITICAL**: Rolling...\nCrit Roll: " + str(crit) + "\nNew Total: **" + str(total) + "**"
-    if roll == 1:
-        crit = random.randint(1,10)
-        total -= crit
-        results += "\n**CRITICAL FAILURE**: Rolling...\nCrit Roll: " + str(crit) + "\nNew Total: **" + str(total) + "**"
-
-    await ctx.send(results)
-
 @bot.command(aliases=["r"])
 async def roll(ctx, rollStr):
     results = d20.roll(rollStr)
     await ctx.send(results)
 
 bot.load_extension("cogs.character")
+bot.load_extension("cogs.game")
 bot.run(TOKEN)
