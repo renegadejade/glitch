@@ -70,16 +70,17 @@ class Character(commands.Cog):
             stats.append(stat.id) 
         for skill in skills_stream:
             skills.append(skill.id)
-
+        print(stats)
+        print(skills)
         if statorskill.lower() in stats and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").document(active)
             character_ref.set(
                 {
-                    statorskill.lower() : val
+                   statorskill.lower() : val
                 }, merge=True
             )
-            character = character_ref.get()
-            results = "**" + character.to_dict()["name"]+ "'s** *" + statorskill.capitalize() + "* is now set to " + str(val) + "."
+            
+            results = "**" + active + "'s** *" + statorskill.capitalize() + "* is now set to " + str(val) + "."
         if statorskill.lower() in skills and int(val) is not None:
             character_ref = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").document(active)
             character_ref.set(
@@ -87,8 +88,8 @@ class Character(commands.Cog):
                     statorskill.lower() : val
                 }, merge=True
             )
-            character = character_ref.get()
-            results = "**" + character.to_dict()["name"]+ "'s** *" + statorskill.capitalize() + "* is now set to " + str(val) + "."
+           
+            results = "**" + active + "'s** *" + statorskill.capitalize() + "* is now set to " + str(val) + "."
         else:
             results = "\"" + statorskill + "\" isn't a STAT or Skill. Try again."
         
