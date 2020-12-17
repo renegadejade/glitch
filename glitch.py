@@ -73,7 +73,16 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send('pong')
+    await ctx.send("pong")
+
+@bot.command()
+async def about(ctx):
+    embed = discord.Embed(title="Glitch", description="A Discord bot for playing Cyberpunk RED", color=0xff69b4)
+    embed.set_thumbnail(url="https://i.imgur.com/cRIB0hg.jpg")
+    embed.add_field(name="Developer", value="John 'JT' Thomas", inline=False)
+    embed.add_field(name="Documentation", value="https://glitch.red/", inline=False)
+    embed.add_field(name="GitHub", value="https://github.com/zensomancer/glitch/", inline=False)
+    await ctx.send(embed=embed)
 
 @bot.command(aliases=["market", "nm"], help="Randomly generates a Night Market | pass -g or -c for different generators")
 async def nightmarket(ctx, command):
