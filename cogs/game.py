@@ -59,12 +59,31 @@ class Game(commands.Cog):
                 results = "Please enter a number after the --luck flag."
                 await ctx.send(results)
                 return
-
+        mod = 0
+        if "-m" in args:
+            flag_position = args.index("-m")
+            modStr = str(args[flag_position + 1])
+            if modStr.isnumeric():
+                mod = int(args[flag_position + 1])
+            else:
+                results = "Please enter a number after the -m flag."
+                await ctx.send(results)
+                return
+            print(mod)
+        elif "--mod" in args:
+            flag_position = args.index("--mod")
+            modStr = args[flag_position + 1]
+            if modStr.isnumeric():
+                mod = int(args[flag_position + 1])
+            else:
+                results = "Please enter a number after the --mod flag."
+                await ctx.send(results)
+                return
         roll = random.randint(1,10)
-        total = skill_level + stat_level + roll + luck
+        total = skill_level + stat_level + roll + luck + mod
 
         results = character["name"] + " rolled a " + str(roll) + " for a total result of: **" + str(total) + "**"
-        results += "\n" + stat.capitalize() + ": " + str(stat_level) + "|" + skillStr.capitalize() + ": " + str(skill_level) + "|Roll: " + str(roll) + "|LUCK: " + str(luck)
+        results += "\n" + stat.capitalize() + ": " + str(stat_level) + "|" + skillStr.capitalize() + ": " + str(skill_level) + "|Roll: " + str(roll) + "|LUCK: " + str(luck) + "|Mod: " + str(mod)
         if roll == 10:
             crit = random.randint(1,10)
             total += crit
