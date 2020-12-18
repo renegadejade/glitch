@@ -63,7 +63,7 @@ class Game(commands.Cog):
         if "-m" in args:
             flag_position = args.index("-m")
             modStr = str(args[flag_position + 1])
-            if modStr.isnumeric():
+            if modStr.lstrip("-").isnumeric():
                 mod = int(args[flag_position + 1])
             else:
                 results = "Please enter a number after the -m flag."
@@ -73,7 +73,7 @@ class Game(commands.Cog):
         elif "--mod" in args:
             flag_position = args.index("--mod")
             modStr = args[flag_position + 1]
-            if modStr.isnumeric():
+            if modStr.lstrip("-").isnumeric():
                 mod = int(args[flag_position + 1])
             else:
                 results = "Please enter a number after the --mod flag."
