@@ -17,6 +17,7 @@ dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 TOKEN = os.getenv('DISCORD_TOKEN')
 COMMAND_PREFIX = "!"
+random.seed()
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
 NM_TYPES = ["Ammunition", "Armor", "Cyberdeck Hardware", "Cyberware", "Exotic Weapons", "Gear", "Melee Weapons", "Programs", "Ranged Weapons", "Street Drugs", "Weapon Attachments"]
@@ -143,35 +144,6 @@ async def nightmarket(ctx, command):
             results += "\nIt's current offerings are: \n" + forsalestr
             await ctx.send(results)
 
-@bot.command()
-async def view(ctx):
-    user_ref = DB.collection("users").document(str(ctx.message.author.id))
-    user = user_ref.get()
-    stats = ""
-    stats += "INT:" + user.to_dict()["int"] + "|"
-    stats += "REF:" + user.to_dict()["ref"] + "|"
-    stats += "DEX:" + user.to_dict()["dex"] + "|"
-    stats += "TECH:" + user.to_dict()["tech"] + "|"
-    stats += "COOL:" + user.to_dict()["cool"] + "|"
-    stats += "WILL:" + user.to_dict()["will"] + "|"
-    stats += "LUCK:" + user.to_dict()["luck"] + "|"
-    stats += "MOVE:" + user.to_dict()["move"] + "|"
-    stats += "BODY:" + user.to_dict()["body"] + "|"
-    stats += "EMP:" + user.to_dict()["emp"]
-
-    embed = discord.Embed(title=user.to_dict()["name"], color=0xff69b4)
-    # embed.add_field(name="INT", value=user.to_dict()["intelligence"], inline=True)
-    # embed.add_field(name="REF", value=user.to_dict()["reflexes"], inline=True)
-    # embed.add_field(name="DEX", value=user.to_dict()["dexterity"], inline=True)
-    # embed.add_field(name="TECH", value=user.to_dict()["technique"], inline=True)
-    # embed.add_field(name="COOL", value=user.to_dict()["cool"], inline=True)
-    # embed.add_field(name="WILL", value=user.to_dict()["willpower"], inline=True)
-    # embed.add_field(name="LUCK", value=user.to_dict()["luck"], inline=True)
-    # embed.add_field(name="MOVE", value=user.to_dict()["movement"], inline=True)
-    # embed.add_field(name="BODY", value=user.to_dict()["body"], inline=True)
-    # embed.add_field(name="EMP", value=user.to_dict()["empathy"], inline=True)
-    embed.add_field(name="STATS", value=stats, inline=True)
-    await ctx.send(embed=embed)
 
 @bot.command(aliases=["r"])
 async def roll(ctx, rollStr):

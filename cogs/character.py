@@ -74,6 +74,24 @@ class Character(commands.Cog):
         
         await ctx.send(results)
 
+    @character.command(name="view", help="View information about your character.")
+    async def view(self, ctx):
+        active = DB.collection("users").document(str(ctx.message.author.id)).get().to_dict()["active"]
+        character = DB.collection("users").document(str(ctx.message.author.id)).collection("characters").document(active).get().to_dict()
+
+        embed = discord.Embed(title=character["name"], description="Netrunner", color=0xff69b4)
+        embed.set_thumbnail(url="https://i.imgur.com/cRIB0hg.jpg")
+        embed.add_field(name="INT", value=character["intelligence"], inline=True)
+        embed.add_field(name="REF", value=character["reflexes"], inline=True)
+        embed.add_field(name="DEX", value=character["dexterity"], inline=True)
+        embed.add_field(name="TECH", value=character["technique"], inline=True)
+        embed.add_field(name="COOL", value=character["cool"], inline=True)
+        embed.add_field(name="WILL", value=character["willpower"], inline=True)
+        embed.add_field(name="LUCK", value=character["luck"], inline=True)
+        embed.add_field(name="MOVE", value=character["movement"], inline=True)
+        embed.add_field(name="BODY", value=character["body"], inline=True)
+        embed.add_field(name="EMP", value=character["empathy"], inline=True)
+        await ctx.send(embed=embed)
 
 def setup(bot):
     bot.add_cog(Character(bot))
