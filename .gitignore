@@ -105,6 +105,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.pyenv/
 
 # Spyder project settings
 .spyderproject
@@ -128,3 +129,6 @@ dmypy.json
 glitch-bot-dev-google-creds.json
 .vscode/
 glitch.code-workspace
+
+# Pycharm
+.idea/
