@@ -118,6 +118,6 @@ async def roll(ctx, roll_str):
     await ctx.send(results)
 
 
-# bot.load_extension("cogs.character")
-# bot.load_extension("cogs.game")
+bot.load_extension("cogs.character")
+bot.load_extension("cogs.game")
 bot.run(TOKEN)
