@@ -1,54 +1,202 @@
 [
 	{
-		"name": "Basic",
-		"cost": "10"
+		"name": "Medium Pistol Bullet x10",
+		"cost": 10
+	},
+		{
+		"name": "Heavy Pistol Bullet x10",
+		"cost": 10
+	},
+		{
+		"name": "Very Heavy Pistol Bullet x10",
+		"cost": 10
+	},
+		{
+		"name": "Slug x10",
+		"cost": 10
+	},
+		{
+		"name": "Rifle Bullet x10",
+		"cost": 10
+	},
+		{
+		"name": "Shell x10",
+		"cost": 10
+	},
+		{
+		"name": "Arrow x10",
+		"cost": 10
 	},
 	{
-		"name": "Armor-Piercing",
-		"cost": "100"
+		"name": "Armor-Piercing Medium Pistol Bullet x10",
+		"cost": 100
 	},
 	{
-		"name": "Biotoxin",
-		"cost": "500"
+		"name": "Armor-Piercing Heavy Pistol Bullet x10",
+		"cost": 100
 	},
 	{
-		"name": "EMP",
-		"cost": "500"
+		"name": "Armor-Piercing Very Heavy Pistol Bullet x10",
+		"cost": 100
 	},
 	{
-		"name": "Expansive",
-		"cost": "100"
+		"name": "Armor-Piercing Slug x10",
+		"cost": 100
 	},
 	{
-		"name": "Flashbang",
-		"cost": "100"
+		"name": "Armor-Piercing Rifle Bullet x10",
+		"cost": 100
 	},
 	{
-		"name": "Incendiary",
-		"cost": "100"
+		"name": "Armor-Piercing Arrow x10",
+		"cost": 100
 	},
 	{
-		"name": "Poison",
-		"cost": "100"
+		"name": "Armor-Piercing Grenade",
+		"cost": 100
 	},
 	{
-		"name": "Rubber",
-		"cost": "10"
+		"name": "Armor-Piercing Rocket",
+		"cost": 100
 	},
 	{
-		"name": "Sleep",
-		"cost": "500"
+		"name": "Biotoxin Arrow x10",
+		"cost": 500
 	},
 	{
-		"name": "Smart",
-		"cost": "500"
+		"name": "Biotoxin Grenade",
+		"cost": 500
 	},
 	{
-		"name": "Smoke",
-		"cost": "50"
+		"name": "EMP Grenade",
+		"cost": 500
 	},
 	{
-		"name": "Teargas",
-		"cost": "50"
+		"name": "Expansive Medium Pistol Bullet x10",
+		"cost": 100
+	},
+	{
+		"name": "Expansive Heavy Pistol Bullet x10",
+		"cost": 100
+	},
+	{
+		"name": "Expansive Very Heavy Pistol Bullet x10",
+		"cost": 100
+	},
+	{
+		"name": "Expansive Slug x10",
+		"cost": 100
+	},
+	{
+		"name": "Expansive Rifle Bullet x10",
+		"cost": 100
+	},
+	{
+		"name": "Expansive Arrow x10",
+		"cost": 100
+	},
+	{
+		"name": "Flashbang Grenade",
+		"cost": 100
+	},
+	{
+		"name": "Incendiary Medium Pistol Bullet x10",
+		"cost": 100
+	},
+	{
+		"name": "Incendiary Heavy Pistol Bullet x10",
+		"cost": 100
+	},
+	{
+		"name": "Incendiary Very Heavy Pistol Bullet x10",
+		"cost": 100
+	},
+	{
+		"name": "Incendiary Rifle Bullet x10",
+		"cost": 100
+	},
+	{
+		"name": "Incendiary Shell x10",
+		"cost": 100
+	},
+	{
+		"name": "Incendiary Arrow x10",
+		"cost": 100
+	},
+	{
+		"name": "Incendiary Grenade",
+		"cost": 100
+	},
+	{
+		"name": "Poison Arrow x10",
+		"cost": 100
+	},
+	{
+		"name": "Poison Grenade",
+		"cost": 100
+	},
+	{
+		"name": "Rubber Medium Pistol Bullet x10",
+		"cost": 10
+	},
+	{
+		"name": "Rubber Heavy Pistol Bullet x10",
+		"cost": 10
+	},
+	{
+		"name": "Rubber Very Heavy Pistol Bullet x10",
+		"cost": 10
+	},
+	{
+		"name": "Rubber Slug x10",
+		"cost": 10
+	},
+	{
+		"name": "Rubber Rifle Bullet x10",
+		"cost": 10
+	},
+	{
+		"name": "Rubber Arrow x10",
+		"cost": 10
+	},
+	{
+		"name": "Sleep Arrow x10",
+		"cost": 500
+	},
+	{
+		"name": "Sleep Grenade",
+		"cost": 500
+	},
+	{
+		"name": "Smart Medium Pistol Bullet x10",
+		"cost": 500
+	},
+	{
+		"name": "Smart Heavy Pistol Bullet x10",
+		"cost": 500
+	},
+	{
+		"name": "Smart Very Heavy Pistol Bullet x10",
+		"cost": 500
+	},
+	{
+		"name": "Smart Rifle Bullet x10",
+		"cost": 500
+	},
+	{
+		"name": "Smart Arrow x10",
+		"cost": 500
+	},
+	{
+		"name": "Smart Rocket",
+		"cost": 500
+	},
+	{
+		"name": "Smoke Grenade",
+		"cost": 50
+	},
+	{
+		"name": "Teargas Grenade",
+		"cost": 50
 	}
 ]

@@ -1,38 +1,66 @@
 [
 	{
-		"name": "Leathers",
-		"cost": "20"
+		"name": "Leather Head Armor",
+		"cost": 20
 	},
 	{
-		"name": "Kevlar",
-		"cost": "50"
+		"name": "Leather Body Armor",
+		"cost": 20
 	},
 	{
-		"name": "Light Armorjack",
-		"cost": "100"
+		"name": "Kevlar Head Armor",
+		"cost": 50
+	},
+	{
+		"name": "Kevlar Body Armor",
+		"cost": 50
+	},
+	{
+		"name": "Light Armorjack Head Armor",
+		"cost": 100
+	},
+	{
+		"name": "Light Armorjack Body Armor",
+		"cost": 100
 	},
 	{
 		"name": "Bodyweight Suit",
-		"cost": "1000"
+		"cost": 1000
 	},
 	{
-		"name": "Medium Armorjack",
-		"cost": "100"
+		"name": "Medium Armorjack Head Armor",
+		"cost": 100
 	},
 	{
-		"name": "Heavy Armorjack",
-		"cost": "500"
+		"name": "Medium Armorjack Body Armor",
+		"cost": 100
 	},
 	{
-		"name": "Flak",
-		"cost": "500"
+		"name": "Heavy Armorjack Head Armor",
+		"cost": 500
 	},
 	{
-		"name": "Metalgear",
-		"cost": "5000"
+		"name": "Heavy Armorjack Body Armor",
+		"cost": 500
+	},
+	{
+		"name": "Flak Head Armor",
+		"cost": 500
+	},
+	{
+		"name": "Flak Body Armor",
+		"cost": 500
+	},
+	{
+		"name": "Metalgear Head Armor",
+		"cost": 5000
+	},
+	{
+		"name": "Metalgear Body Armor",
+		"cost": 5000
 	},
 	{
 		"name": "Bulletproof Shield",
-		"cost": "100"
+		"cost": 100
 	}
 ]

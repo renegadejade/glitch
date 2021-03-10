@@ -1,0 +1,452 @@
+[
+	{
+		"name": "Bag Lady Chic Bottoms",
+		"cost": 20,
+		"type": "Bag Lady Chic"
+	},
+	{
+		"name": "Bag Lady Chic Top",
+		"cost": 10,
+		"type": "Bag Lady Chic"
+	},
+	{
+		"name": "Bag Lady Chic Jacket",
+		"cost": 20,
+		"type": "Bag Lady Chic"
+	},
+	{
+		"name": "Bag Lady Chic Footwear",
+		"cost": 20,
+		"type": "Bag Lady Chic"
+	},
+	{
+		"name": "Bag Lady Chic Jewelry",
+		"cost": 20,
+		"type": "Bag Lady Chic"
+	},
+	{
+		"name": "Bag Lady Chic Mirrorshades",
+		"cost": 20,
+		"type": "Bag Lady Chic"
+	},
+	{
+		"name": "Bag Lady Chic Glasses",
+		"cost": 10,
+		"type": "Bag Lady Chic"
+	},
+	{
+		"name": "Bag Lady Chic Contact Lenses",
+		"cost": 10,
+		"type": "Bag Lady Chic"
+	},
+	{
+		"name": "Bag Lady Chic Hat",
+		"cost": 10,
+		"type": "Bag Lady Chic"
+	},
+	{
+		"name": "Gang Colors Bottoms",
+		"cost": 50,
+		"type": "Gang Colors"
+	},
+	{
+		"name": "Gang Colors Top",
+		"cost": 20,
+		"type": "Gang Colors"
+	},
+	{
+		"name": "Gang Colors Jacket",
+		"cost": 50,
+		"type": "Gang Colors"
+	},
+	{
+		"name": "Gang Colors Footwear",
+		"cost": 20,
+		"type": "Gang Colors"
+	},
+	{
+		"name": "Gang Colors Jewelry",
+		"cost": 50,
+		"type": "Gang Colors"
+	},
+	{
+		"name": "Gang Colors Mirrorshades",
+		"cost": 20,
+		"type": "Gang Colors"
+	},
+	{
+		"name": "Gang Colors Glasses",
+		"cost": 20,
+		"type": "Gang Colors"
+	},
+	{
+		"name": "Gang Colors Contact Lenses",
+		"cost": 10,
+		"type": "Gang Colors"
+	},
+	{
+		"name": "Gang Colors Hat",
+		"cost": 10,
+		"type": "Gang Colors"
+	},
+	{
+		"name": "Generic Chic Bottoms",
+		"cost": 50,
+		"type": "Generic Chic"
+	},
+	{
+		"name": "Generic Chic Top",
+		"cost": 20,
+		"type": "Generic Chic"
+	},
+	{
+		"name": "Generic Chic Jacket",
+		"cost": 50,
+		"type": "Generic Chic"
+	},
+	{
+		"name": "Generic Chic Footwear",
+		"cost": 20,
+		"type": "Generic Chic"
+	},
+	{
+		"name": "Generic Chic Jewelry",
+		"cost": 50,
+		"type": "Generic Chic"
+	},
+	{
+		"name": "Generic Chic Mirrorshades",
+		"cost": 20,
+		"type": "Generic Chic"
+	},
+	{
+		"name": "Generic Chic Glasses",
+		"cost": 20,
+		"type": "Generic Chic"
+	},
+	{
+		"name": "Generic Chic Contact Lenses",
+		"cost": 10,
+		"type": "Generic Chic"
+	},
+	{
+		"name": "Generic Chic Hat",
+		"cost": 10,
+		"type": "Generic Chic"
+	},
+	{
+		"name": "Bohemian Bottoms",
+		"cost": 50,
+		"type": "Bohemian"
+	},
+	{
+		"name": "Bohemian Top",
+		"cost": 20,
+		"type": "Bohemian"
+	},
+	{
+		"name": "Bohemian Jacket",
+		"cost": 50,
+		"type": "Bohemian"
+	},
+	{
+		"name": "Bohemian Footwear",
+		"cost": 50,
+		"type": "Bohemian"
+	},
+	{
+		"name": "Bohemian Jewelry",
+		"cost": 100,
+		"type": "Bohemian"
+	},
+	{
+		"name": "Bohemian Mirrorshades",
+		"cost": 50,
+		"type": "Bohemian"
+	},
+	{
+		"name": "Bohemian Glasses",
+		"cost": 50,
+		"type": "Bohemian"
+	},
+	{
+		"name": "Bohemian Contact Lenses",
+		"cost": 10,
+		"type": "Bohemian"
+	},
+	{
+		"name": "Bohemian Hat",
+		"cost": 10,
+		"type": "Bohemian"
+	},
+	{
+		"name": "Leisurewear Bottoms",
+		"cost": 100,
+		"type": "Leisurewear"
+	},
+	{
+		"name": "Leisurewear Top",
+		"cost": 20,
+		"type": "Leisurewear"
+	},
+	{
+		"name": "Leisurewear Jacket",
+		"cost": 100,
+		"type": "Leisurewear"
+	},
+	{
+		"name": "Leisurewear Footwear",
+		"cost": 50,
+		"type": "Leisurewear"
+	},
+	{
+		"name": "Leisurewear Jewelry",
+		"cost": 100,
+		"type": "Leisurewear"
+	},
+	{
+		"name": "Leisurewear Mirrorshades",
+		"cost": 50,
+		"type": "Leisurewear"
+	},
+	{
+		"name": "Leisurewear Glasses",
+		"cost": 50,
+		"type": "Leisurewear"
+	},
+	{
+		"name": "Leisurewear Contact Lenses",
+		"cost": 20,
+		"type": "Leisurewear"
+	},
+	{
+		"name": "Leisurewear Hat",
+		"cost": 50,
+		"type": "Leisurewear"
+	},
+	{
+		"name": "Nomad Leathers Bottoms",
+		"cost": 100,
+		"type": "Nomad Leathers"
+	},
+	{
+		"name": "Nomad Leathers Top",
+		"cost": 20,
+		"type": "Nomad Leathers"
+	},
+	{
+		"name": "Nomad Leathers Jacket",
+		"cost": 100,
+		"type": "Nomad Leathers"
+	},
+	{
+		"name": "Nomad Leathers Footwear",
+		"cost": 100,
+		"type": "Nomad Leathers"
+	},
+	{
+		"name": "Nomad Leathers Jewelry",
+		"cost": 100,
+		"type": "Nomad Leathers"
+	},
+	{
+		"name": "Nomad Leathers Mirrorshades",
+		"cost": 50,
+		"type": "Nomad Leathers"
+	},
+	{
+		"name": "Nomad Leathers Glasses",
+		"cost": 50,
+		"type": "Nomad Leathers"
+	},
+	{
+		"name": "Nomad Leathers Contact Lenses",
+		"cost": 20,
+		"type": "Nomad Leathers"
+	},
+	{
+		"name": "Nomad Leathers Hat",
+		"cost": 100,
+		"type": "Nomad Leathers"
+	},
+	{
+		"name": "Asia Pop Bottoms",
+		"cost": 100,
+		"type": "Asia Pop"
+	},
+	{
+		"name": "Asia Pop Top",
+		"cost": 20,
+		"type": "Asia Pop"
+	},
+	{
+		"name": "Asia Pop Jacket",
+		"cost": 100,
+		"type": "Asia Pop"
+	},
+	{
+		"name": "Asia Pop Footwear",
+		"cost": 100,
+		"type": "Asia Pop"
+	},
+	{
+		"name": "Asia Pop Jewelry",
+		"cost": 100,
+		"type": "Asia Pop"
+	},
+	{
+		"name": "Asia Pop Mirrorshades",
+		"cost": 100,
+		"type": "Asia Pop"
+	},
+	{
+		"name": "Asia Pop Glasses",
+		"cost": 100,
+		"type": "Asia Pop"
+	},
+	{
+		"name": "Asia Pop Contact Lenses",
+		"cost": 100,
+		"type": "Asia Pop"
+	},
+	{
+		"name": "Asia Pop Hat",
+		"cost": 100,
+		"type": "Asia Pop"
+	},
+	{
+		"name": "Urban Flash Bottoms",
+		"cost": 100,
+		"type": "Urban Flash"
+	},
+	{
+		"name": "Urban Flash Top",
+		"cost": 20,
+		"type": "Urban Flash"
+	},
+	{
+		"name": "Urban Flash Jacket",
+		"cost": 100,
+		"type": "Urban Flash"
+	},
+	{
+		"name": "Urban Flash Footwear",
+		"cost": 100,
+		"type": "Urban Flash"
+	},
+	{
+		"name": "Urban Flash Jewelry",
+		"cost": 100,
+		"type": "Urban Flash"
+	},
+	{
+		"name": "Urban Flash Mirrorshades",
+		"cost": 100,
+		"type": "Urban Flash"
+	},
+	{
+		"name": "Urban Flash Glasses",
+		"cost": 100,
+		"type": "Urban Flash"
+	},
+	{
+		"name": "Urban Flash Contact Lenses",
+		"cost": 100,
+		"type": "Urban Flash"
+	},
+	{
+		"name": "Urban Flash Hat",
+		"cost": 100,
+		"type": "Urban Flash"
+	},
+	{
+		"name": "Businesswear Bottoms",
+		"cost": 500,
+		"type": "Businesswear"
+	},
+	{
+		"name": "Businesswear Top",
+		"cost": 50,
+		"type": "Businesswear"
+	},
+	{
+		"name": "Businesswear Jacket",
+		"cost": 500,
+		"type": "Businesswear"
+	},
+	{
+		"name": "Businesswear Footwear",
+		"cost": 500,
+		"type": "Businesswear"
+	},
+	{
+		"name": "Businesswear Jewelry",
+		"cost": 5000,
+		"type": "Businesswear"
+	},
+	{
+		"name": "Businesswear Mirrorshades",
+		"cost": 500,
+		"type": "Businesswear"
+	},
+	{
+		"name": "Businesswear Glasses",
+		"cost": 500,
+		"type": "Businesswear"
+	},
+	{
+		"name": "Businesswear Contact Lenses",
+		"cost": 100,
+		"type": "Businesswear"
+	},
+	{
+		"name": "Businesswear Hat",
+		"cost": 500,
+		"type": "Businesswear"
+	},
+	{
+		"name": "High Fashion Bottoms",
+		"cost": 1000,
+		"type": "High Fashion"
+	},
+	{
+		"name": "High Fashion Top",
+		"cost": 500,
+		"type": "High Fashion"
+	},
+	{
+		"name": "High Fashion Jacket",
+		"cost": 1000,
+		"type": "High Fashion"
+	},
+	{
+		"name": "High Fashion Footwear",
+		"cost": 5000,
+		"type": "High Fashion"
+	},
+	{
+		"name": "High Fashion Jewelry",
+		"cost": 500000,
+		"type": "High Fashion"
+	},
+	{
+		"name": "High Fashion Mirrorshades",
+		"cost": 1000,
+		"type": "High Fashion"
+	},
+	{
+		"name": "High Fashion Glasses",
+		"cost": 1000,
+		"type": "High Fashion"
+	},
+	{
+		"name": "High Fashion Contact Lenses",
+		"cost": 1000,
+		"type": "High Fashion"
+	},
+	{
+		"name": "High Fashion Hat",
+		"cost": 5000,
+		"type": "High Fashion"
+	}
+]
